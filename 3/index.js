@@ -15,9 +15,9 @@ and for supper I want usually want pizza 🍕.
 */
 
 const faveFoods = {
-    breakfast: 'chocolate croissant with capuccino',
-    lunch: 'viet phoo soup and rise with fish',
-    supper: 'papaya salad'
+    breakfast: 'chocolate croissant with capuccino 🥐',
+    lunch: 'viet phoo soup and rise with fish 🍝',
+    supper: 'papaya salad 🍕'
 }
 
 let meals = document.getElementById("meals");

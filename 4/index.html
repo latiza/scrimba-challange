@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+/* Whispering function 
+Write a function `whisper` that takes in a sentence 
+and returns a new sentence in all lowercase letters with
+"shh..." at the beginning. 
+
+The function should also remove an exclamation point
+at the end of the sentence, if there is one. 
+
+Example 
+input: "The KITTENS are SLEEPING!"
+output: "shh... the kittens are sleeping"
+
+Hint: endsWith and slice
+*/
+
+function whisper(text){
+    text = "shh...." + text.toLowerCase();
+    if (text[text.length - 1] === "!" || text[text.length - 1] === ".") {
+        return text.slice(0, text.length - 1);
+    } else {
+        return text
+    }   
+    return text;   
+}
+
+console.log(whisper("PLEASE STOP SHOUTING."));
+console.log(whisper("MA'AM, this is a Wendy's!"));
+
+
+
+   </script> 
+</body>
+</html>
